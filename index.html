@@ -1,0 +1,61 @@
+<!--The link rel: attribute defines the relationship 
+between a linked resource and the current document.
+
+Q -: What does stylesheet mean in HTML?
+A stylesheet is a file which tells a
+browser how to render a page
+
+href : stands for hypertext reference. 
+It's the source of the file used by the tag.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="index.css"/> 
+</head>
+<body>
+    <div id="root"></div>
+
+
+<!--<script> // javascript is written in script tag.
+
+const heading = document.createElement("h1");
+
+heading.innerHTML = "Namaste Everyone from Javascript";
+
+const root = document.getElementById("root");
+root.appendChild(heading);
+
+** Important point : How does browser knows document.createElement what it is (By Browser API);
+
+</script>-->
+<!--
+
+The crossorigin : attribute on a <script> tag specifies that
+ CORS(Cross Origin Resource Sharing.) is supported 
+ when loading an external script
+ file from a third party server or domain.
+
+CORS is a standard mechanism used to retrieve files from other domains.
+-->
+<script 
+crossorigin 
+src="https://unpkg.com/react@18/umd/react.development.js">
+</script>
+<script 
+crossorigin 
+src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+</script>
+<!--react@18 : this is the 18 version of react we are using
+    
+react-dom@18 : this is the web version of react we are using   -->
+<script src="App.js">
+
+</script>
+</body>
+</html> 
